@@ -1,0 +1,75 @@
+/*---------------------------------------------------
+
+============ Main - SASS ============
+
+---------------------------------------------------*/
+/*---------------------------------------------------
+
+============ Main - SASS ============
+
+---------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Main Styles - Generic Reset Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; border: 0; border-width: 0; font-family: "Balsamiq Sans", cursive; vertical-align: baseline; -webkit-tap-highlight-color: transparent; }
+
+*::selection { background: #d7d7d7; }
+
+body { max-width: 100%; position: relative; overflow-x: hidden; overscroll-behavior-x: none; scroll-behavior: smooth; }
+
+button, select { text-transform: none; }
+
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+strong, b { font-weight: bold; }
+
+a { text-decoration: none; color: inherit; display: inline-block; }
+
+a:hover, a:focus { text-decoration: none; }
+
+ol, ul { list-style: none; }
+
+img { margin: 0; padding: 0; border: 0; }
+
+/*---------------------------------------------------
+
+============ Modules - SASS ============
+
+---------------------------------------------------*/
+header { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; padding: 5px 15px; margin: 15px auto 0; left: 0; right: 0; width: 95%; position: absolute; z-index: 1; }
+
+header .logo { display: inline-block; width: 100%; max-width: 80px; }
+
+header .header--buttons { display: inline-block; }
+
+header .button, header .button__green, header .button__red { display: inline-block; width: auto; padding: 10px 45px; border-radius: 50px; color: #fff; font-weight: bold; font-size: 20px; background-color: red; }
+
+header .button__green { background-color: #2BB673; margin-right: 20px; }
+
+header .button__red { background-color: #FF3B4D; }
+
+header::after { content: ""; display: inline-block; width: 100%; height: 3px; background-color: #fff; border-radius: 100px; opacity: 30%; position: absolute; bottom: -10px; left: 0; right: 0; }
+
+.container { display: inline-block; width: 100%; }
+
+.container--herocard { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; overflow: hidden; width: 100%; padding: 0 10%; height: 100vh; background-color: #3263DC; padding-top: 150px; position: relative; }
+
+.container--herocard .herocard--col { display: inline-block; width: 50%; text-align: center; position: relative; z-index: 1; }
+
+.container--herocard .herocard--col h1 { display: inline-block; width: 100%; text-align: left; color: #fff; font-size: 70px; font-weight: bold; }
+
+.container--herocard .herocard--col p { display: inline-block; width: 100%; text-align: left; color: #fff; font-size: 25px; margin-top: 40px; }
+
+.container--herocard .herocard--col img { display: inline-block; width: 100%; max-width: 550px; }
+
+.container--herocard::before, .container--herocard::after { content: ""; display: inline-block; width: 700px; height: 700px; border-radius: 500px; border: 3px solid #fff; position: absolute; opacity: 30%; }
+
+.container--herocard:after { top: 0; right: 0; transform: translate(-10%, -20%); }
+
+.container--herocard::before { top: 0; right: 0; transform: translate(40%, 60%); }
+
+/*---------------------------------------------------
+
+============ Layout - SASS ============
+
+---------------------------------------------------*/
+/*# sourceMappingURL=styles.css.map */

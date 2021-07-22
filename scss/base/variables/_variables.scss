@@ -1,0 +1,42 @@
+//Charset
+@charset "UTF-8";
+
+//Fuentes from Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//Fonts
+$Balsamiq-Sans: 'Balsamiq Sans', cursive;
+
+
+//Colors
+$blue-hero: #3263DC;
+
+$green-001: #2BB673;
+$red-001: #FF3B4D;
+
+$black-001: #222222;
+
+//Size Fonts
+$font-p: 14px;
+$font-h: 20px;
+
+//Mixins
+@function darken($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+@function lighten($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@mixin prefix($declarations, $prefixes: ()) {
+    @each $property, $value in $declarations {
+      @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+      }
+  
+      // Output standard non-prefixed declaration
+      #{$property}: $value;
+    }
+}
