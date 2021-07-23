@@ -35,9 +35,9 @@ img { margin: 0; padding: 0; border: 0; }
 ============ Modules - SASS ============
 
 ---------------------------------------------------*/
-header { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; padding: 5px 15px; margin: 15px auto 0; left: 0; right: 0; width: 95%; position: absolute; z-index: 1; }
+header { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; width: 95%; max-width: 2000px; padding: 5px 15px; margin: 15px auto 0; left: 0; right: 0; position: absolute; z-index: 1; }
 
-header .logo { display: inline-block; width: 100%; max-width: 80px; }
+header .logo { display: inline-block; width: 100%; max-width: 120px; }
 
 header .header--buttons { display: inline-block; }
 
@@ -49,9 +49,17 @@ header .button__red { background-color: #FF3B4D; }
 
 header::after { content: ""; display: inline-block; width: 100%; height: 3px; background-color: #fff; border-radius: 100px; opacity: 30%; position: absolute; bottom: -10px; left: 0; right: 0; }
 
+header .showButtons { display: none; width: 25px; height: 25px; }
+
+header .showButtons img { display: inline-block; width: 100%; }
+
+header .showButtons-checked img { transform: rotate(180deg); }
+
 .container { display: inline-block; width: 100%; }
 
-.container--herocard { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; overflow: hidden; width: 100%; padding: 0 10%; height: 100vh; background-color: #3263DC; padding-top: 150px; position: relative; }
+.container--herocard { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; overflow: hidden; width: 100%; padding: 0 10%; height: 100vh; max-height: 900px; background-color: #3263DC; padding-top: 150px; position: relative; }
+
+.container--herocard .herocard--main { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; max-width: 2000px; }
 
 .container--herocard .herocard--col { display: inline-block; width: 50%; text-align: center; position: relative; z-index: 1; }
 
@@ -67,9 +75,83 @@ header::after { content: ""; display: inline-block; width: 100%; height: 3px; ba
 
 .container--herocard::before { top: 0; right: 0; transform: translate(40%, 60%); }
 
+.container--main { display: block; width: 95%; margin: 50px auto; padding: 40px 50px; background-image: url(../media/images/BackgroundDots.svg); background-repeat: repeat; background-size: 2000px; background-attachment: fixed; background-position: center; font-size: 0; box-sizing: border-box; }
+
+.container--main .container--cols { display: block; max-width: 2000px; margin: 0 auto; }
+
+.container--main .main--col { display: inline-block; vertical-align: top; }
+
+.container--main .main--col:first-of-type { width: 35%; padding-right: 50px; }
+
+.container--main .main--col:last-of-type { width: 65%; }
+
+.container--main .main--col h2 { margin-bottom: 30px; font-size: 35px; color: #222222; }
+
+.container--main .main--col h3 { margin-bottom: 30px; font-size: 25px; color: #222222; }
+
+.container--main .main--col p { font-size: 15px; font-weight: 100; line-height: 22px; color: #222222; padding-left: 15px; }
+
+.container--main .main--col p.vocabulary { margin-bottom: 20px; }
+
+.container--main .main--col .buttonsSwitches { display: inline-block; width: 100%; }
+
+.container--main .main--col .buttonsSwitches .buttonSwitch { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; width: 100%; background-color: #fff; height: 55px; padding: 0 15px; margin-bottom: 15px; box-shadow: 0px 10px 26px rgba(34, 34, 34, 0.1); border-radius: 14px; }
+
+.container--main .main--col .buttonsSwitches .buttonSwitch span { font-size: 19px; color: #222222; }
+
+.container--main .main--col .buttonsSwitches .buttonSwitch img { display: inline-block; width: 100%; max-width: 25px; }
+
+.container--main .main--col .buttonsSwitches .buttonSwitch--checked img { transform: rotate(180deg); }
+
+.container--main .main--col .card { display: block; width: 100%; max-width: 700px; height: 400px; background-color: #6b6b6b; border-radius: 25px; margin: 15px 0; background-size: cover; background-position: center; background-repeat: no-repeat; transition-duration: .2s; }
+
+.container--main .main--col .card:hover { background-color: #646464; background-blend-mode: overlay; }
+
+.container--main .main--col .card--professions1 { background-image: url(../media/images/Cover1-P.jpg); }
+
+.container--main .main--col .card--professions2 { background-image: url(../media/images/Cover2-P.jpg); }
+
+.container--main .main--col .card--presentProgessive { background-image: url(../media/images/Cover1-PP.jpg); }
+
+footer { display: inline-block; width: 100%; background-color: #EEF1F3; padding: 50px 0px; text-align: center; }
+
+footer p { font-size: 14px; font-weight: 100; opacity: 50%; }
+
+.hidden { display: none; }
+
 /*---------------------------------------------------
 
 ============ Layout - SASS ============
 
 ---------------------------------------------------*/
+@media (max-width: 64em) { header { display: inline-block; background-color: #fff; border-radius: 14px; box-shadow: 0px 10px 26px rgba(34, 34, 34, 0.1); z-index: 9; }
+  header .logo { max-width: 90px; }
+  header .showButtons { display: inline-block; position: absolute; top: 35px; right: 25px; }
+  header .header--buttons { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; width: 100%; font-size: 0; box-sizing: border-box; }
+  header .header--buttons .button, header .header--buttons .button__green, header .header--buttons .button__red { font-size: 14px; width: 47%; padding: 10px 30px; text-align: center; margin: 5px 4px; }
+  .header--buttons--hidden { display: none !important; }
+  .container--herocard { padding: 0 5%; padding-top: 100px; }
+  .container .herocard--col { width: 100%; }
+  .container .herocard--col h1 { font-size: 50px; }
+  .container .herocard--col p { font-size: 19px; margin-top: 20px; }
+  .container .herocard--col img { margin-top: 45px; width: 85%; }
+  .container .herocard--main { flex-direction: column; }
+  .container--main { padding: 1%; margin: 10px auto; }
+  .container--main .main--col { width: 100% !important; }
+  .container--main .main--col:first-of-type { padding-right: 0; } }
+
+@media (min-width: 70em) { .container { display: block; margin: 0 auto; }
+  .container--herocard { padding: 0 10%; }
+  .container--main { padding: 40px 50px; } }
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,10 @@
 <body>
     <header>
         <img src="../media/images/Logo.svg" alt="Logo" class="logo">
-        <div class="header--buttons">
+        <a href="javascript:void(0)" class="showButtons" id="showButtons" onclick="showButtons()">
+            <img src="../media/images/ArrowDown.svg" alt="ArrowDown">
+        </a>
+        <div class="header--buttons header--buttons--hidden" id="header-buttons">
             <a href="javascript:void(0)" class="button__green">
                 Grammar
             </a>
@@ -24,18 +27,164 @@
 
     <section class="container">
         <div class="container--herocard">
-            <div class="herocard--col">
-                <h1>
-                    Herocard Title
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
-                </p>
+            <div class="herocard--main">
+                <div class="herocard--col">
+                    <h1>
+                        Herocard Title
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+                    </p>
+                </div>
+                <div class="herocard--col">
+                    <img src="../media/images/HeroImage.svg" alt="Imagen Herocard">
+                </div>
             </div>
-            <div class="herocard--col">
-                <img src="../media/images/HeroImage.svg" alt="Imagen Herocard">
+        </div>
+
+        <div class="container--main">
+            <div class="container--cols">
+                <div class="main--col">
+                    <div class="buttonsSwitches">
+                        <a href="javascript:void(0)" id="button-vocabulary" onclick="showV()" class="buttonSwitch buttonSwitch--checked">
+                            <span>Vocabulary</span>
+                            <img src="../media/images/ArrowDown.svg" alt="ArrowDown">
+                        </a>
+                        <p class="vocabulary" id="vocabulary">
+                            Accountant: Contador <br>
+                            Actor / Actress: Actor y actriz <br>
+                            Air hostess: Azafata <br>
+                            Architect: Arquitecto <br>
+                            Baker: Panadero <br>
+                            Biologis: Biólogo/a <br>
+                            Bus driver: Conductor/a de autobús <br>
+                            Businessman /Businesswoman: Empresario/a,
+                            hombre/mujer de negocios <br>
+                            Caretaker: Portero <br>
+                            Carpenter: Carpintero/a <br>
+                            Chemist: Químico <br>
+                            Cook / Chef: Cocinero <br>
+                            Dancer: Bailarín <br>
+                            Dentist: Dentista <br>
+                            Designer: Diseñador <br>
+                            Doctor: Médico/a <br>
+                            Farmer: Granjero, agricultor <br>
+                            Fireman: Bombero <br>
+                            Fisherman: Pescador <br>
+                            Gardener: Jardinero/a <br>
+                            Hairdresser: Peluquero/a <br>
+                            Journalist: Periodista <br>
+                            Judge: Juez <br>
+                            Lawyer: abogado/a <br>
+                            Mailman: Cartero <br>
+                            Mechanic: Mecánico/a <br>
+                            Model: Modelo <br>
+                            Nanny: Niñera <br>
+                            Nurse: Enfermero/a <br>
+                            Painter: Pintor <br>
+                            Pastry cook: Pastelero, repostero <br>
+                            Pharmacist: Farmacéutico <br>
+                            Photographer: Fotógrafo <br>
+                            Policeman / Policewoman: Policía <br>
+                            Politician: Político <br>
+                            Porter: Conserje <br>
+                            Postman: Cartero <br>
+                            Professions (profesiones) <br>
+                            Psychologist: Psicólogo/a <br>
+                            Recepcionist: Recepcionista <br>
+                            Salesman: Vendedor <br>
+                            Scientist: Científico <br>
+                            Shoemaker: Zapatero <br>
+                            Singer: Cantante <br>
+                            Social worker: Trabajador social <br>
+                            Sportsman: deportista <br>
+                            Surgeon: Cirujano <br>
+                            Taxi driver: Taxista <br>
+                            Teacher: Profesor/a (Primaria y Secundaria) <br>
+                            Travel agent: Agente de viajes <br>
+                            Veterinarian: Veterinario <br>
+                            Waiter/ waitress: Camarero/ camarera <br>
+                            Writer: Escritor
+                        </p>
+
+                        <a href="javascript:void(0)" id="button-grammar" onclick="showG()" class="buttonSwitch">
+                            <span>Grammar</span>
+                            <img src="../media/images/ArrowDown.svg" alt="ArrowDown">
+                        </a>
+                        <p class="grammar hidden" id="grammar">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum est hic autem vitae at ut
+                            fugit eum laborum voluptatem, maiores nobis ipsa doloribus neque esse, ratione accusamus!
+                            Aspernatur voluptatum magni minima ex eligendi amet esse suscipit atque. Nam, optio. Dicta,
+                            ullam. Veniam, deserunt doloremque voluptatibus, nesciunt commodi laborum quia facilis
+                            praesentium rerum quidem consectetur omnis quod voluptatum quis culpa pariatur adipisci.
+                            Sed, a iste aliquid cupiditate perferendis labore omnis deleniti facere unde vitae, vel
+                            earum assumenda ad consequuntur! Laboriosam tempore perspiciatis illum. Debitis architecto
+                            magni beatae! Veritatis eos sit ab, quod amet in vitae officia corrupti! Temporibus dolore
+                            esse ducimus cupiditate hic ipsum facere vero quibusdam optio, cumque atque at eaque illum
+                            quo libero totam nostrum eum necessitatibus reprehenderit aspernatur error dolor! Tempore
+                            rerum quae unde itaque exercitationem. Tempora eaque molestiae ab ut sapiente laborum beatae
+                            tempore officiis vitae vero. Doloribus recusandae porro, voluptates facere neque nam? Et
+                            iure fugit, repellendus iusto suscipit nobis saepe laboriosam eveniet earum tempora
+                            aspernatur adipisci nisi, dolor tempore est porro voluptas exercitationem necessitatibus
+                            nulla inventore impedit magnam tenetur reiciendis voluptatem. Ad nesciunt maxime, asperiores
+                            veritatis vel cupiditate error, magni itaque laboriosam, nam expedita. Error blanditiis non
+                            soluta perspiciatis dolores doloribus, reprehenderit animi quidem culpa aperiam neque hic.
+                            Expedita, quisquam rerum. Eaque, minima! Expedita incidunt nulla necessitatibus repellendus
+                            deserunt molestiae fuga veniam, natus voluptates similique vitae vero dolores at repudiandae
+                            provident commodi quos totam, facilis, temporibus dolorem sint. Officia eum amet delectus
+                            voluptatibus quis? Temporibus praesentium commodi quisquam ducimus quaerat, optio ipsum
+                            nesciunt inventore, alias necessitatibus magnam, eaque vel esse eligendi blanditiis dolor.
+                            Ea ut, reiciendis itaque harum nobis id. Repellat optio voluptatum mollitia velit eos.
+                            Veniam est nulla dolore obcaecati temporibus, blanditiis ipsam saepe a accusamus quos
+                            incidunt illum provident molestias voluptatem! Autem quas quisquam nulla quidem eaque
+                            officiis. Enim, numquam. Obcaecati, doloribus ex assumenda, esse expedita necessitatibus
+                            ratione perferendis suscipit at quisquam consectetur accusantium atque dolores iure! Dolores
+                            atque vel nesciunt repellendus nihil excepturi ipsam similique saepe quas dolorum quae
+                            recusandae libero at, cumque iure, in sunt reprehenderit asperiores. Eligendi, praesentium
+                            cumque earum nulla aliquam rerum, quam dolor totam, dolorum numquam possimus saepe! Esse
+                            expedita quis molestiae assumenda animi deserunt quos? Provident doloremque cupiditate
+                            perspiciatis dolor, rerum voluptatibus, cum totam dignissimos voluptatum quos natus odio
+                            maiores delectus blanditiis incidunt at placeat id alias eaque non aspernatur! Labore
+                            veritatis error quaerat ex dolores adipisci nostrum id iure velit? Laborum iure aliquam non
+                            sint assumenda!
+                        </p>
+                    </div>
+                </div>
+                <div class="main--col">
+                    <h2>
+                        Cards
+                    </h2>
+                    <h3>
+                        Professions
+                    </h3>
+                    
+                    <a href="javascript:void(0)" class="card card--professions1">
+                        <!-- Card -->
+                    </a>
+    
+                    <a href="javascript:void(0)" class="card card--professions2">
+                        <!-- Card -->
+                    </a>
+    
+    
+                    <h3>
+                        Present Progressive
+                    </h3>
+    
+                    <a href="javascript:void(0)" class="card card--presentProgessive">
+                        <!-- Card -->
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>
+            © 2021 | All rights reserved. Madame To ®
+        </p>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
