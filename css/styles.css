@@ -14,6 +14,8 @@
 
 *::selection { background: #d7d7d7; }
 
+html { scroll-behavior: smooth; }
+
 body { max-width: 100%; position: relative; overflow-x: hidden; overscroll-behavior-x: none; scroll-behavior: smooth; }
 
 button, select { text-transform: none; }
@@ -117,7 +119,35 @@ footer { display: inline-block; width: 100%; background-color: #EEF1F3; padding:
 
 footer p { font-size: 14px; font-weight: 100; opacity: 50%; }
 
+.modalOverlay { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 100vw; height: 100vh; background: rgba(3, 3, 3, 0.6); overflow: hidden; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 999; opacity: 0; pointer-events: none; transition-timing-function: ease-in-out; transition-duration: .3s; backdrop-filter: blur(3px); }
+
+.modal { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-flex-direction: column; -o-flex-direction: column; flex-direction: column; width: 90%; --padingH: 24px; padding: var(--padingH) 24px; min-width: 350px; max-width: 650px; min-height: 400px; height: auto; max-height: 94vh; background: #ebecf0; margin: 0 auto; border-radius: 20px; position: absolute; left: 50%; top: 30%; transform: translate(-50%, -50%); transition-duration: .3s; overflow: auto; background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+.modal.p1 { background-image: url(../media/images/Cover1-PopUp.jpg); }
+
+.modal.p2 { background-image: url(../media/images/Cover2-P.jpg); }
+
+.modal.pp { background-image: url(../media/images/Cover1-PP.jpg); }
+
+.modal__header { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; width: 100%; }
+
+.modal__header a { display: inline-block; width: auto; height: auto; }
+
+.modal__header a img { display: inline-block; width: 45px; height: 45px; }
+
+.modal__body { -moz-display: flex; -ms-display: flex; -o-display: flex; display: flex; -moz-flex-direction: column; -o-flex-direction: column; flex-direction: column; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; overflow-x: hidden; overflow-y: auto; }
+
+.modal__body .modal__buttons { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-auto-rows: 0fr; width: 100%; overflow: auto; padding: 4px 4px; }
+
+.modal__body .modal__buttons .buttonModal { display: inline-block; width: calc(5 / 100%); padding: 15px 20px; text-align: center; background-color: #F7B700; margin: 10px; border-radius: 10px; }
+
+.modalOverlay--isShow { opacity: 1; pointer-events: inherit; }
+
+.modalOverlay--isShow .modal { top: 50%; }
+
 .hidden { display: none; }
+
+.is--scrollLocked { overflow-y: hidden; }
 
 /*---------------------------------------------------
 
@@ -154,4 +184,7 @@ footer p { font-size: 14px; font-weight: 100; opacity: 50%; }
 /* Portrait and Landscape */
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
+@media (max-width: 720px) { .modal__body .modal__buttons { grid-template-columns: 1fr 1fr 1fr; } }
+
+@media (max-width: 550px) { .modal__body .modal__buttons { grid-template-columns: 1fr 1fr; } }
 /*# sourceMappingURL=styles.css.map */

@@ -15,11 +15,11 @@
             <img src="../media/images/ArrowDown.svg" alt="ArrowDown">
         </a>
         <div class="header--buttons header--buttons--hidden" id="header-buttons">
-            <a href="javascript:void(0)" class="button__green">
+            <a href="#button-grammar" class="button__green" onclick="showGH()" id="button-grammar-header">
                 Grammar
             </a>
 
-            <a href="javascript:void(0)" class="button__red">
+            <a href="#button-vocabulary" class="button__red" onclick="showVH()" id="button-vocabulary-header">
                 Vocabulary
             </a>
         </div>
@@ -158,11 +158,11 @@
                         Professions
                     </h3>
                     
-                    <a href="javascript:void(0)" class="card card--professions1">
+                    <a href="javascript:void(0)" class="card card--professions1" onclick="showModal('modal1')">
                         <!-- Card -->
                     </a>
     
-                    <a href="javascript:void(0)" class="card card--professions2">
+                    <a href="javascript:void(0)" class="card card--professions2" onclick="showModal('modal2')">
                         <!-- Card -->
                     </a>
     
@@ -171,7 +171,7 @@
                         Present Progressive
                     </h3>
     
-                    <a href="javascript:void(0)" class="card card--presentProgessive">
+                    <a href="javascript:void(0)" class="card card--presentProgessive" onclick="showModal('modal3')">
                         <!-- Card -->
                     </a>
                 </div>
@@ -184,6 +184,166 @@
             © 2021 | All rights reserved. Madame To ®
         </p>
     </footer>
+
+    <div class="modalOverlay" id="modal1">
+        <div class="modal p1">
+            <div class="modal__header">
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
+                </a>
+    
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal1')"  alt="Close">
+                </a>
+            </div>
+            <div class="modal__body">
+                <div class="modal__buttons">
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 1
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 2
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 3
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 4
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 5
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 6
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 7
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 8
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 9
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 10
+                    </a>
+                </div>
+
+                <div class="moda__activity">
+                    <!-- Actividades -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modalOverlay" id="modal2">
+        <div class="modal p2">
+            <div class="modal__header">
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
+                </a>
+    
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal2')"  alt="Close">
+                </a>
+            </div>
+            <div class="modal__body">
+                <div class="modal__buttons">
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 1
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 2
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 3
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 4
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 5
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 6
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 7
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 8
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 9
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 10
+                    </a>
+                </div>
+
+                <div class="moda__activity">
+                    <!-- Actividades -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modalOverlay" id="modal3">
+        <div class="modal pp">
+            <div class="modal__header">
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
+                </a>
+    
+                <a href="javascript:void(0)">
+                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal3')"  alt="Close">
+                </a>
+            </div>
+            <div class="modal__body">
+                <div class="modal__buttons">
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 1
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 2
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 3
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 4
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 5
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 6
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 7
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 8
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 9
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal">
+                        Question 10
+                    </a>
+                </div>
+
+                <div class="moda__activity">
+                    <!-- Actividades -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/main.js"></script>
 </body>
