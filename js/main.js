@@ -64,6 +64,7 @@ function backModal() {
         images[i].classList.add('hidden');
     }
     contbuttons__p.style.display = "";
+    buttonBack__modal1.style.visibility = "hidden";
 }
 
 const ActivitieP = idActivitie =>{
@@ -97,6 +98,7 @@ function backModal2() {
         images[i].classList.add('hidden');
     }
     contbuttons__p2.style.display = "";
+    buttonBack__modal2.style.visibility = "hidden";
 }
 
 
@@ -119,6 +121,7 @@ function backModal3() {
         images[i].classList.add('hidden');
     }
     contbuttons__p3.style.display = "";
+    buttonBack__modal3.style.visibility = "hidden";
 }
 
 
@@ -142,4 +145,5 @@ function backModal4() {
         images[i].classList.add('hidden');
     }
     contbuttons__p4.style.display = "";
+    buttonBack__modal4.style.visibility = "hidden";
 }
