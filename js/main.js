@@ -53,3 +53,93 @@ const hideModal = idModal =>{
     cuerpo.classList.remove('is--scrollLocked');
 }
 //#endregion pop Up
+
+
+
+
+function backModal() {
+    var images = activity__p.querySelectorAll('img');
+    let i;
+    for (i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+    }
+    contbuttons__p.style.display = "";
+}
+
+const ActivitieP = idActivitie =>{
+
+    let activitie = document.getElementById(idActivitie);
+    
+    //console.log(idActivitie);
+    
+    activitie.classList.remove('hidden');
+    contbuttons__p.style.display = "none";
+    buttonBack__modal1.style.visibility = "visible";
+}
+
+
+
+const ActivitieP2 = idActivitie =>{
+
+    let activitie = document.getElementById(idActivitie);
+    
+    //console.log(idActivitie);
+    
+    activitie.classList.remove('hidden');
+    contbuttons__p2.style.display = "none";
+    buttonBack__modal2.style.visibility = "visible";
+}
+
+function backModal2() {
+    var images = activity__p2.querySelectorAll('img');
+    let i;
+    for (i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+    }
+    contbuttons__p2.style.display = "";
+}
+
+
+
+const ActivitiePP = idActivitie =>{
+
+    let activitie = document.getElementById(idActivitie);
+    
+    console.log(idActivitie);
+    
+    activitie.classList.remove('hidden');
+    contbuttons__p3.style.display = "none";
+    buttonBack__modal3.style.visibility = "visible";
+}
+
+function backModal3() {
+    var images = activity__p3.querySelectorAll('img');
+    let i;
+    for (i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+    }
+    contbuttons__p3.style.display = "";
+}
+
+
+
+
+const ActivitieP3 = idActivitie =>{
+
+    let activitie = document.getElementById(idActivitie);
+    
+    //console.log(idActivitie);
+    
+    activitie.classList.remove('hidden');
+    contbuttons__p4.style.display = "none";
+    buttonBack__modal4.style.visibility = "visible";
+}
+
+function backModal4() {
+    var images = activity__p4.querySelectorAll('img');
+    let i;
+    for (i = 0; i < images.length; i++) {
+        images[i].classList.add('hidden');
+    }
+    contbuttons__p4.style.display = "";
+}

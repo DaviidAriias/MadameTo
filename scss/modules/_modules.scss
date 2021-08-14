@@ -224,6 +224,9 @@ header{
                 margin-bottom: 30px;
                 font-size: $font-h + 5;
                 color: $black-001;
+                &:last-of-type{
+                    margin-top: 60px;
+                }
             }
             p{
                 font-size: $font-p + 1;
@@ -296,15 +299,19 @@ header{
                 }
                 
                 &--professions1{
-                    background-image: url(../media/images/Cover1-P.jpg);
+                    background-image: url(../media/images/Covers/Covers-Groups/P-Cover1.png);
                 }
 
                 &--professions2{
-                    background-image: url(../media/images/Cover2-P.jpg);
+                    background-image: url(../media/images/Covers/Covers-Groups/P-Cover2.png);
+                }
+
+                &--professions3{
+                    background-image: url(../media/images/Covers/Covers-Groups/P-Cover3.png);
                 }
 
                 &--presentProgessive{
-                    background-image: url(../media/images/Cover1-PP.jpg);
+                    background-image: url(../media/images/Covers/Covers-Groups/PP-Cover1.png);
                 }
             }
         }
@@ -361,7 +368,7 @@ footer{
     padding: var(--padingH) 24px;
     min-width: 350px;
     max-width: 650px;
-    min-height: 400px;
+    //min-height: 400px;
     height: auto;
     max-height: 94vh;
     background: #ebecf0;
@@ -378,13 +385,16 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     &.p1{
-        background-image: url(../media/images/Cover1-PopUp.jpg);
+        background-image: url(../media/images/Covers/Covers-Modals/Pink-Background.png);
     }
     &.p2{
-        background-image: url(../media/images/Cover2-P.jpg);
+        background-image: url(../media/images/Covers/Covers-Modals/Purple-Background.png);
+    }
+    &.p3{
+        background-image: url(../media/images/Covers/Covers-Modals/Pink-Background-2.png);
     }
     &.pp{
-        background-image: url(../media/images/Cover1-PP.jpg);
+        background-image: url(../media/images/Covers/Covers-Modals/Green-Background.png);
     }
 
 
@@ -394,12 +404,23 @@ footer{
             align-items: center,
             justify-content: space-between
         ), moz ms o);
+        position: relative;
+        z-index: 2;
 
         width: 100%;
         a{
             display: inline-block;
             width: auto;
             height: auto;
+
+            &.modal__buttonBack{
+                visibility: hidden;
+            }
+
+            &.modal__buttonClose{
+
+            }
+
             img{
                 display: inline-block;
                 width: 45px;
@@ -425,6 +446,7 @@ footer{
             width: 100%;
             overflow: auto;
             padding: 4px 4px;
+            //z-index: 2;
             .buttonModal{
                 display: inline-block;
                 width: calc(5 / 100%);
@@ -433,6 +455,31 @@ footer{
                 background-color: #F7B700;
                 margin: 10px;
                 border-radius: 10px;
+            }
+        }
+
+        .moda__activity{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            img{
+                display: inline-block;
+                width: 100%;
+                border-radius: 10px;
+                
+                //position: absolute;
+                //left: 50%;
+                //top: 50%;
+                //transform: translate(-50%, -50%);
+            }
+            
+            .hidden{
+                display: none;
+            }
+            
+            .modal_professions-A1{
+
             }
         }
     }

@@ -165,6 +165,10 @@
                     <a href="javascript:void(0)" class="card card--professions2" onclick="showModal('modal2')">
                         <!-- Card -->
                     </a>
+
+                    <a href="javascript:void(0)" class="card card--professions3" onclick="showModal('modal4')">
+                        <!-- Card -->
+                    </a>
     
     
                     <h3>
@@ -188,50 +192,83 @@
     <div class="modalOverlay" id="modal1">
         <div class="modal p1">
             <div class="modal__header">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" class="modal__buttonBack" id="buttonBack__modal1" onclick="backModal('modal1')">
                     <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
                 </a>
     
-                <a href="javascript:void(0)">
-                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal1')"  alt="Close">
+                <a href="javascript:void(0)" class="modal__buttonClose" id="buttonClose__modal1" onclick="hideModal('modal1')">
+                    <img src="../media/icons/icon-CloseModal.svg" alt="Close">
                 </a>
             </div>
             <div class="modal__body">
-                <div class="modal__buttons">
-                    <a href="javascript:void(0)" class="buttonModal">
+                <div class="modal__buttons" id="contbuttons__p">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie1')">
                         Question 1
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie2')">
                         Question 2
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie3')">
                         Question 3
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie4')">
                         Question 4
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie5')">
                         Question 5
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie6')">
                         Question 6
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie7')">
                         Question 7
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie8')">
                         Question 8
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie9')">
                         Question 9
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie10')">
                         Question 10
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie11')">
+                        Question 11
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie12')">
+                        Question 12
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP('activitie13')">
+                        Question 13
                     </a>
                 </div>
 
-                <div class="moda__activity">
-                    <!-- Actividades -->
+                <div class="moda__activity" id="activity__p">
+                    <img src="../media/images/Tasks/Professions_1/P-Card1.jpg" class="hidden" id="activitie1" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card2.jpg" class="hidden" id="activitie2" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card3.jpg" class="hidden" id="activitie3" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card4.jpg" class="hidden" id="activitie4" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card5.jpg" class="hidden" id="activitie5" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card6.jpg" class="hidden" id="activitie6" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card7.jpg" class="hidden" id="activitie7" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card8.jpg" class="hidden" id="activitie8" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card9.jpg" class="hidden" id="activitie9" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card10.jpg" class="hidden"  id="activitie10" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card11.jpg" class="hidden"  id="activitie11" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card12.jpg" class="hidden"  id="activitie12" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_1/P-Card13.jpg" class="hidden"  id="activitie13" alt="Professions">
                 </div>
             </div>
         </div>
@@ -242,50 +279,170 @@
     <div class="modalOverlay" id="modal2">
         <div class="modal p2">
             <div class="modal__header">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" class="modal__buttonBack" id="buttonBack__modal2" onclick="backModal2('modal2')">
                     <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
                 </a>
     
-                <a href="javascript:void(0)">
-                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal2')"  alt="Close">
+                <a href="javascript:void(0)" class="modal__buttonClose" id="buttonClose__modal2" onclick="hideModal('modal2')">
+                    <img src="../media/icons/icon-CloseModal.svg" alt="Close">
                 </a>
             </div>
             <div class="modal__body">
-                <div class="modal__buttons">
-                    <a href="javascript:void(0)" class="buttonModal">
+                <div class="modal__buttons" id="contbuttons__p2">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie27')">
                         Question 1
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie28')">
                         Question 2
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie29')">
                         Question 3
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie30')">
                         Question 4
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie31')">
                         Question 5
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie32')">
                         Question 6
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie33')">
                         Question 7
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie34')">
                         Question 8
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie35')">
                         Question 9
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie36')">
                         Question 10
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie37')">
+                        Question 11
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie38')">
+                        Question 12
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP2('activitie39')">
+                        Question 13
                     </a>
                 </div>
 
-                <div class="moda__activity">
-                    <!-- Actividades -->
+                <div class="moda__activity" id="activity__p2">
+                    <img src="../media/images/Tasks/Professions_3/P-Card27.jpg" class="hidden" id="activitie27" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card28.jpg" class="hidden" id="activitie28" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card29.jpg" class="hidden" id="activitie29" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card30.jpg" class="hidden" id="activitie30" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card31.jpg" class="hidden" id="activitie31" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card32.jpg" class="hidden" id="activitie32" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card33.jpg" class="hidden" id="activitie33" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card34.jpg" class="hidden" id="activitie34" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card35.jpg" class="hidden" id="activitie35" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card36.jpg" class="hidden"  id="activitie36" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card37.jpg" class="hidden"  id="activitie37" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card38.jpg" class="hidden"  id="activitie38" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_3/P-Card39.jpg" class="hidden"  id="activitie39" alt="Professions">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modalOverlay" id="modal4">
+        <div class="modal p3">
+            <div class="modal__header">
+                <a href="javascript:void(0)" class="modal__buttonBack" id="buttonBack__modal4" onclick="backModal4('modal4')">
+                    <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
+                </a>
+    
+                <a href="javascript:void(0)" class="modal__buttonClose" id="buttonClose__modal4" onclick="hideModal('modal4')">
+                    <img src="../media/icons/icon-CloseModal.svg" alt="Close">
+                </a>
+            </div>
+            <div class="modal__body">
+                <div class="modal__buttons" id="contbuttons__p4">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie14')">
+                        Question 1
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie15')">
+                        Question 2
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie16')">
+                        Question 3
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie17')">
+                        Question 4
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie18')">
+                        Question 5
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie19')">
+                        Question 6
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie20')">
+                        Question 7
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie21')">
+                        Question 8
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie22')">
+                        Question 9
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie23')">
+                        Question 10
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie24')">
+                        Question 11
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie25')">
+                        Question 12
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitieP3('activitie26')">
+                        Question 13
+                    </a>
+                </div>
+
+                <div class="moda__activity" id="activity__p4">
+                    <img src="../media/images/Tasks/Professions_2/P-Card14.jpg" class="hidden" id="activitie14" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card15.jpg" class="hidden" id="activitie15" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card16.jpg" class="hidden" id="activitie16" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card17.jpg" class="hidden" id="activitie17" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card18.jpg" class="hidden" id="activitie18" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card19.jpg" class="hidden" id="activitie19" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card20.jpg" class="hidden" id="activitie20" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card21.jpg" class="hidden" id="activitie21" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card22.jpg" class="hidden" id="activitie22" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card23.jpg" class="hidden" id="activitie23" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card24.jpg" class="hidden"  id="activitie24" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card25.jpg" class="hidden"  id="activitie25" alt="Professions">
+
+                    <img src="../media/images/Tasks/Professions_2/P-Card26.jpg" class="hidden"  id="activitie26" alt="Professions">
                 </div>
             </div>
         </div>
@@ -296,50 +453,83 @@
     <div class="modalOverlay" id="modal3">
         <div class="modal pp">
             <div class="modal__header">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" class="modal__buttonBack" id="buttonBack__modal3" onclick="backModal3('modal3')">
                     <img src="../media/icons/icon-ArrowBack.svg" alt="Arrow Back">
                 </a>
     
-                <a href="javascript:void(0)">
-                    <img src="../media/icons/icon-CloseModal.svg" onclick="hideModal('modal3')"  alt="Close">
+                <a href="javascript:void(0)" class="modal__buttonClose" id="buttonClose__modal3" onclick="hideModal('modal3')">
+                    <img src="../media/icons/icon-CloseModal.svg" alt="Close">
                 </a>
             </div>
             <div class="modal__body">
-                <div class="modal__buttons">
-                    <a href="javascript:void(0)" class="buttonModal">
+                <div class="modal__buttons" id="contbuttons__p3">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP1')">
                         Question 1
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP2')">
                         Question 2
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP3')">
                         Question 3
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP4')">
                         Question 4
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP5')">
                         Question 5
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP6')">
                         Question 6
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP7')">
                         Question 7
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP8')">
                         Question 8
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP9')">
                         Question 9
                     </a>
-                    <a href="javascript:void(0)" class="buttonModal">
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP10')">
                         Question 10
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP11')">
+                        Question 11
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP12')">
+                        Question 12
+                    </a>
+                    <a href="javascript:void(0)" class="buttonModal" onclick="ActivitiePP('activitiePP13')">
+                        Question 13
                     </a>
                 </div>
 
-                <div class="moda__activity">
-                    <!-- Actividades -->
+                <div class="moda__activity" id="activity__p3">
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card1.jpg" class="hidden" id="activitiePP1" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card2.jpg" class="hidden" id="activitiePP2" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card3.jpg" class="hidden" id="activitiePP3" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card4.jpg" class="hidden" id="activitiePP4" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card5.jpg" class="hidden" id="activitiePP5" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card6.jpg" class="hidden" id="activitiePP6" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card7.jpg" class="hidden" id="activitiePP7" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card8.jpg" class="hidden" id="activitiePP8" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card9.jpg" class="hidden" id="activitiePP9" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card10.jpg" class="hidden"  id="activitiePP10" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card11.jpg" class="hidden"  id="activitiePP11" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card12.jpg" class="hidden"  id="activitiePP12" alt="Professions">
+
+                    <img src="../media/images/Tasks/PresentProgressive/PP-Card13.jpg" class="hidden"  id="activitiePP13" alt="Professions">
                 </div>
             </div>
         </div>
