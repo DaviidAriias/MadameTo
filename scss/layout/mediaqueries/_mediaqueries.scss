@@ -1,6 +1,21 @@
 //----------- Mobile
-@media (min-width: 45em) {
+@media (max-width: 45em) {
+    body{
+        //background-color: red !important;
+    }
 
+    .container{
+        &--main{
+            .main--col{
+                .card{
+                    display: block !important;
+                    width: 100% !important;
+                    height: 210px !important;
+                    margin: 15px 0 !important;
+                }
+            }
+        }
+    }
 }
 
 //----------- Phablet
@@ -9,7 +24,15 @@
         //background-color: brown !important;
     }
 
-    
+    .container{
+        &--main{
+            .main--col{
+                .card{
+                    height: 210px !important;
+                }
+            }
+        }
+    }
 }
 
 //----------- Tablet
@@ -88,6 +111,12 @@
                 width: 100% !important;
                 &:first-of-type{
                     padding-right: 0;
+                }
+                .card{
+                    display: inline-block;
+                    width: 48%;
+                    height: 270px;
+                    margin: 15px 1%;
                 }
             }
         }

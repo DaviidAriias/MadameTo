@@ -107,7 +107,7 @@ const ActivitiePP = idActivitie =>{
 
     let activitie = document.getElementById(idActivitie);
     
-    console.log(idActivitie);
+    //console.log(idActivitie);
     
     activitie.classList.remove('hidden');
     contbuttons__p3.style.display = "none";
