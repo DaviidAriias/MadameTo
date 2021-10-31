@@ -42,12 +42,12 @@ header{
         color: #fff;
         font-weight: bold;
         font-size: $font-h;
+        margin-right: 20px;
 
         background-color: red;
         &__green{
             @extend .button;
             background-color: $green-001;
-            margin-right: 20px;
             &:hover{
                 
             }
@@ -55,6 +55,15 @@ header{
         &__red{
             @extend .button;
             background-color: $red-001;
+        }
+        &__yellow{
+            @extend .button;
+            background-color: $yellow-001;
+            //color: $black-001;
+        }
+
+        &:last-of-type{
+            margin-right: 0;
         }
     }
 
@@ -484,6 +493,12 @@ footer{
             }
         }
     }
+}
+
+//Audios
+audio{
+    display: inline-block;
+    width: 100%;
 }
 
 .modalOverlay--isShow {

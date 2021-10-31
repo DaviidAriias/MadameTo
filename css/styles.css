@@ -92,7 +92,7 @@ header {
     max-width: 120px; }
   header .header--buttons {
     display: inline-block; }
-  header .button, header .button__green, header .button__red {
+  header .button, header .button__green, header .button__red, header .button__yellow {
     display: inline-block;
     width: auto;
     padding: 10px 45px;
@@ -100,12 +100,16 @@ header {
     color: #fff;
     font-weight: bold;
     font-size: 20px;
+    margin-right: 20px;
     background-color: red; }
     header .button__green {
-      background-color: #2BB673;
-      margin-right: 20px; }
+      background-color: #2BB673; }
     header .button__red {
       background-color: #FF3B4D; }
+    header .button__yellow {
+      background-color: #d9be45; }
+    header .button:last-of-type, header .button__green:last-of-type, header .button__red:last-of-type, header .button__yellow:last-of-type {
+      margin-right: 0; }
   header::after {
     content: "";
     display: inline-block;
@@ -442,6 +446,10 @@ footer {
       .modal__body .moda__activity .hidden {
         display: none; }
 
+audio {
+  display: inline-block;
+  width: 100%; }
+
 .modalOverlay--isShow {
   opacity: 1;
   pointer-events: inherit; }
@@ -495,10 +503,11 @@ footer {
       -ms-justify-content: space-between;
       -o-justify-content: space-between;
       justify-content: space-between;
+      display: inline-block;
       width: 100%;
       font-size: 0;
       box-sizing: border-box; }
-      header .header--buttons .button, header .header--buttons .button__green, header .header--buttons .button__red {
+      header .header--buttons .button, header .header--buttons .button__green, header .header--buttons .button__red, header .header--buttons .button__yellow {
         font-size: 14px;
         width: 47%;
         padding: 10px 30px;
