@@ -51,6 +51,14 @@ const hideModal = idModal =>{
     let cuerpo = document.body;
     modal.classList.remove('modalOverlay--isShow');
     cuerpo.classList.remove('is--scrollLocked');
+
+    var audios = document.querySelectorAll('audio');
+    let i;
+    for (i = 0; i < audios.length; i++) {
+        audios[i].classList.add('hidden');
+        audios[i].pause();
+        audios[i].currentTime = 0;
+    }
 }
 //#endregion pop Up
 
